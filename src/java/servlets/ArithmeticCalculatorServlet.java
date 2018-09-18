@@ -49,7 +49,7 @@ public class ArithmeticCalculatorServlet extends HttpServlet {
                break;
        }
         request.setAttribute("answer", result);
-        
+        request.setAttribute("numb2",n2);
 getServletContext().getRequestDispatcher("/WEB-INF/arithmeticcalculator.jsp").forward(request, response);
             
     }
